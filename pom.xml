@@ -13,6 +13,7 @@
     <modules>
         <module>NacosProvider-3001</module>
         <module>NacosConsumer-4001</module>
+        <module>NacosConfig-5001</module>
     </modules>
 
     <properties>

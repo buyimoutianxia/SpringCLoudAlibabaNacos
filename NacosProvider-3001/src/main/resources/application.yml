@@ -1,0 +1,18 @@
+server:
+  port: 3001
+
+spring:
+  application:
+    name: Nacos-Producer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848  #注册中心地址
+
+
+#actuator暴露点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

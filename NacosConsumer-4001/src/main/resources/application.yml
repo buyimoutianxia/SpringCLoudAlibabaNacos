@@ -1,0 +1,22 @@
+server:
+  port: 4001
+
+spring:
+  application:
+    name: Nacos-Consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848  #注册中心地址
+
+#请求服务名称
+service:
+  provider: Nacos-Producer
+
+
+#actuator暴露点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

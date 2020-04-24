@@ -9,6 +9,8 @@ spring:
       config:
         server-addr: localhost:8848 #配置中心服务端地址
         file-extension: yaml  #指定配置文件扩展名
+        group: DEFAULT_GROUP  #指定配置文件分组
+        namespace: adde01b6-fc48-42e4-af90-2da2adf838c4  #指定配置文件命名空间
   profiles:
-    active: dev  #指定配置文件所属环境
+    active: info #指定配置文件所属环境
 
